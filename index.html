@@ -172,7 +172,7 @@
                         await axios.get(`https://api.pool.pm/wallet/${this.walletSearch}`, {timeout: 10000})
                         .then((res) => {
                             tokens = [...res.data.tokens];
-                            lands = tokens.filter(land => { return land.policy === '4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d' });
+                            lands = tokens.filter(land => { return land.policy === 'e5a2bcc51466942a9db1da62471a1b682bde3abcebafee2c7fb1e378' });
 
                             lands.forEach(land => {
                                 let my_x = land.metadata['-----Land Sale 1-----'][1].x;
@@ -188,7 +188,7 @@
                         await axios.get(`https://api.pool.pm/wallet/${this.walletSearchSecond}`, {timeout: 10000})
                         .then((res) => {
                             tokens = [...res.data.tokens];
-                            lands = tokens.filter(land => { return land.policy === '4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d' });
+                            lands = tokens.filter(land => { return land.policy === 'e5a2bcc51466942a9db1da62471a1b682bde3abcebafee2c7fb1e378' });
 
                             lands.forEach(land => {
                                 let my_x = land.metadata['-----Land Sale 1-----'][1].x;
